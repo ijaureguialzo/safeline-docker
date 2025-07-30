@@ -5,6 +5,8 @@ help: _header
 	@echo Opciones:
 	@echo ----------------------
 	@echo start / stop / restart
+	@echo password
+	@echo ----------------------
 	@echo clean
 	@echo ----------------------
 
@@ -31,3 +33,6 @@ restart: stop start
 
 clean:
 	@docker compose down -v --remove-orphans
+
+password:
+	@docker exec safeline-mgt resetadmin
