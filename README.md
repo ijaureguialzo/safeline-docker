@@ -1,13 +1,7 @@
-# safeline-docker
+# SafeLine
 
-```
- ______________________________________
-/ Do not drink coffee in early A.M. It \
-\ will keep you awake until noon.      /
- --------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+Instalación de [SafeLine](https://safepoint.cloud/landing/safeline) en Docker.
+
+## Referencias
+
+- [Deploy SafeLine](https://docs.waf.chaitin.com/en/GetStarted/Deploy)
