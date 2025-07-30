@@ -42,8 +42,9 @@ services:
       test: pg_isready -U safeline-ce -d safeline-ce
   mgt:
     container_name: safeline-mgt
+    platform: linux/amd64
     restart: always
-    image: ${IMAGE_PREFIX}/safeline-mgt${REGION}${ARCH_SUFFIX}:${IMAGE_TAG:?image tag required}
+    image: ${IMAGE_PREFIX}/safeline-mgt${REGION}:${IMAGE_TAG:?image tag required}
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - resources-mgt:/app/data
