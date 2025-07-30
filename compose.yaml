@@ -74,6 +74,7 @@ services:
     image: ${IMAGE_PREFIX}/safeline-detector${REGION}${ARCH_SUFFIX}:${IMAGE_TAG}
     volumes:
       - resources-detector:/resources/detector
+      - ./detector.yml:/resources/detector/detector.yml
       - logs-detector:/logs/detector
       - /etc/localtime:/etc/localtime:ro
     environment:
